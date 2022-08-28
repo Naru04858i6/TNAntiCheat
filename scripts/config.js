@@ -32,18 +32,10 @@ export default
       "minecraft:mob_spawner",
       "minecraft:invisiblebedrock",
       "minecraft:invisible_bedrock",
-      "minecraft:tnt",
       "minecraft:lava",
       "minecraft:water",
       "minecraft:flowing_lava",
       "minecraft:flowing_water",
-      "minecraft:lava_bucket",
-      "minecraft:axolotl_bucket",
-      "minecraft:cod_bucket",
-      "minecraft:pufferfish_bucket",
-      "minecraft:salmon_bucket",
-      "minecraft:tropical_fish_bucket",
-      "minecraft:respawn_anchor",
       "minecraft:bedrock",
       "minecraft:barrier"
     ]
@@ -58,18 +50,10 @@ export default
       "minecraft:bee_nest",
       "minecraft:mob_spawner",
       "minecraft:invisiblebedrock",
-      "minecraft:tnt",
       "minecraft:lava",
       "minecraft:water",
       "minecraft:flowing_lava",
       "minecraft:flowing_water",
-      "minecraft:lava_bucket",
-      "minecraft:axolotl_bucket",
-      "minecraft:cod_bucket",
-      "minecraft:pufferfish_bucket",
-      "minecraft:salmon_bucket",
-      "minecraft:tropical_fish_bucket",
-      "minecraft:respawn_anchor",
       "minecraft:bedrock",
       "minecraft:barrier"
     ]
@@ -81,7 +65,6 @@ export default
       "minecraft:movingBlock",
       "minecraft:movingblock",
       "minecraft:moving_block",
-      "minecraft:tnt",
       "minecraft:npc"
     ]
   },
