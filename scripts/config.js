@@ -36,8 +36,6 @@ export default
       "minecraft:moving_block"
     ],
     kick: [
-      "minecraft:beehive",
-      "minecraft:bee_nest",
       "minecraft:lava",
       "minecraft:water",
       "minecraft:flowing_lava",
@@ -46,15 +44,6 @@ export default
       "minecraft:invisible_bedrock"
     ],
     notify: [
-      "minecraft:lava_bucket",
-      "minecraft:axolotl_bucket",
-      "minecraft:cod_bucket",
-      "minecraft:pufferfish_bucket",
-      "minecraft:salmon_bucket",
-      "minecraft:tropical_fish_bucket",
-      "minecraft:tadpole_bucket",
-      "minecraft:respawn_anchor",
-      "minecraft:tnt",
       "minecraft:bedrock",
       "minecraft:barrier",
       "minecraft:mob_spawner"
@@ -121,7 +110,7 @@ export default
   },
   itemCheckD: { // 不正なエンチャントを検知
     state: true,
-    mode: "hand", // inventory: 全インベントリをチェックするから負荷大きめ, hand: 手持ちだけ検知だからまだまし
+    mode: "inventory", // inventory: 全インベントリをチェックするから負荷大きめ, hand: 手持ちだけ検知だからまだまし
     punishment: "notify"
   },
   placeCheckA: { // 置いたら検知 アイテムはitemList参照
@@ -135,7 +124,8 @@ export default
     spawnEgg: true,
     detect: [
       "minecraft:chest",
-      "minecraft:trapped_chest"
+      "minecraft:trapped_chest",
+      "minecraft:shulker_box"
     ]
   },
   placeCheckC: { // 設置時に指定したブロックのデータをクリア
@@ -167,9 +157,9 @@ export default
   },
   entityCheckC: { // 1tickにスポーンできるエンティティの数
     state: true,
-    maxArrowSpawns: 10, // 矢の数
-    maxItemSpawns: 20, // アイテムの数
-    maxCmdMinecartSpawns: 3
+    maxArrowSpawns: 50, // 矢の数
+    maxItemSpawns: 100, // アイテムの数
+    maxCmdMinecartSpawns: 1
   },
   entityCheckD: { // エンティティのインベントリの中をチェック
     state: true,
@@ -203,12 +193,12 @@ export default
   creative: { // クリエイティブになったら検知
     state: true,
     punishment: "notify",
-    defaultGamemode: "adventure" // クリエを検知した時に設定するGamemode
+    defaultGamemode: "survival" // クリエを検知した時に設定するGamemode
   },
   others: {
     adminPanel: 'minecraft:stick', // 管理者用パネルを呼び出すためのアイテム
     sendws: false, // For discord-mcbe | メッセージをsayで出力します
-    shortName: false, // チャットに出てくる"TN-AntiCheat"の表示を"TN-AC"にして圧迫感を無くします
+    shortName: true, // チャットに出てくる"TN-AntiCheat"の表示を"TN-AC"にして圧迫感を無くします
     debug: false
   }
 }
