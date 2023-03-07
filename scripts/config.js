@@ -36,8 +36,6 @@ export default
       "minecraft:moving_block"
     ],
     kick: [
-      "minecraft:beehive",
-      "minecraft:bee_nest",
       "minecraft:lava",
       "minecraft:water",
       "minecraft:flowing_lava",
@@ -46,15 +44,6 @@ export default
       "minecraft:invisible_bedrock"
     ],
     notify: [
-      "minecraft:lava_bucket",
-      "minecraft:axolotl_bucket",
-      "minecraft:cod_bucket",
-      "minecraft:pufferfish_bucket",
-      "minecraft:salmon_bucket",
-      "minecraft:tropical_fish_bucket",
-      "minecraft:tadpole_bucket",
-      "minecraft:respawn_anchor",
-      "minecraft:tnt",
       "minecraft:bedrock",
       "minecraft:barrier"
     ]
